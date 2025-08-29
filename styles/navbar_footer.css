@@ -1,0 +1,159 @@
+/* Nav Bar */
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    /* margin: 0px; */
+    border-radius: 16px;
+    padding: 0.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure white background on mobile toggler mode */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        gap: 20px !important;
+    }
+}
+
+/* Navbar Links */
+.nav-link {
+    color: #666777 !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: #000 !important;
+}
+
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, 
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Login Button */
+.login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+}
+
+/* Navbar Link Underline Effect (Desktop Only) */
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, 
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+
+/* Footer */
+
+/* Footer Styling */
+.footer {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-list {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.topics {
+    color: #bbb;
+    transition: color 0.3s ease-in-out;
+}
+
+.topics:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.socialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.socialContainer:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Bottom Footer Links */
+.footer-description a {
+    color: #bbb;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-description a:hover {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .footer-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-description {
+        flex-direction: column;
+        text-align: center;
+    }
+}

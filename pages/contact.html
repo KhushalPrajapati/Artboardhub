@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ArtboardHub</title>
+    <link rel="stylesheet" href="/Project/FSD-Individual/styles/contact.css">
+    <link rel="stylesheet" href="/Project/FSD-Individual/styles/navbar_footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="homepage.html">
+                <img src="\Project\FSD-Individual\images\nav-logo.png" alt="ArtboardHub Logo" height="50">
+            </a>
+            
+            <!-- Navbar Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="browsepage.html">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="findjobs.html">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Login Button -->
+                <a href="login.html" class="login-button">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <p class="text-center mb-5">Need a designer? Have a question? We're here to help!</p>
+            <div class="contact-form">
+                <form  action="https://api.web3forms.com/submit" action="#" method="POST">
+                    <input type="hidden" name="access_key" value="47c3468f-eb7d-4673-8835-f0b8ae2d2866">    
+                    <div class="mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="message" class="form-control" placeholder="Tell us about your project..." rows="5" required></textarea>
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+   <footer class="footer text-white">
+    <div class="container p-4">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="footer-title">About Us</h5>
+                <p>We help you find your dream job with ease. Explore opportunities, connect with employers, and
+                    take the next step in your career journey.</p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="footer-title">Explore</h5>
+                <ul class="footer-links">
+                    <li>Discover Designers</li>
+                    <li>Explore Work</li>
+                    <li>Design Blog</li>
+                    <li>Get in Touch</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 text-center">
+                <h5 class="footer-title">Follow Us</h5>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white">
+                        <path
+                            d="M22.675 0h-21.35C.597 0 0 .598 0 1.325v21.351C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.798.143v3.242l-1.92.001c-1.506 0-1.797.715-1.797 1.765v2.316h3.592l-.468 3.622h-3.124V24h6.126c.728 0 1.325-.597 1.325-1.324V1.325C24 .598 23.403 0 22.675 0z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white">
+                        <path
+                            d="M23.953 4.569c-.885.385-1.83.645-2.825.762a4.93 4.93 0 002.163-2.725 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.384 4.482A13.96 13.96 0 011.67 3.15a4.92 4.92 0 001.524 6.573A4.903 4.903 0 01.964 9.15v.06a4.918 4.918 0 003.946 4.827 4.935 4.935 0 01-2.212.085 4.923 4.923 0 004.6 3.417A9.867 9.867 0 010 21.542 13.94 13.94 0 007.548 24c9.142 0 14.307-7.721 14.307-14.426 0-.22-.005-.438-.015-.656a10.243 10.243 0 002.513-2.609z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white">
+                        <path
+                            d="M12 2.163c-5.488 0-9.937 4.448-9.937 9.937 0 4.41 2.87 8.167 6.792 9.502.498.09.68-.216.68-.481 0-.236-.008-.866-.013-1.7-2.764.602-3.345-1.34-3.345-1.34-.454-1.158-1.109-1.466-1.109-1.466-.906-.62.07-.608.07-.608 1.002.07 1.53 1.03 1.53 1.03.89 1.528 2.34 1.088 2.91.831.09-.646.35-1.088.636-1.338-2.207-.25-4.523-1.103-4.523-4.91 0-1.084.387-1.97 1.03-2.662-.103-.253-.446-1.273.097-2.656 0 0 .84-.269 2.75 1.022a9.6 9.6 0 012.5-.337c.848.004 1.702.115 2.5.337 1.91-1.291 2.75-1.022 2.75-1.022.543 1.383.2 2.403.097 2.656.64.692 1.028 1.578 1.028 2.662 0 3.818-2.32 4.658-4.534 4.904.36.31.678.925.678 1.866 0 1.346-.013 2.429-.013 2.76 0 .267.18.577.688.479 3.923-1.335 6.793-5.092 6.793-9.503 0-5.489-4.45-9.937-9.938-9.937z" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center p-3">
+        © 2025 Artboardhub | Terms | Privacy | Cookies
+    </div>
+</footer>
+</body>
+</html>
